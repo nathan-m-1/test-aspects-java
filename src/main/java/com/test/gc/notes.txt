@@ -1,0 +1,3 @@
+Bandera para loguear la salida del GC
+    -Xlog:gc //G1 por default
+    -XX:+UseZGC -Xlog:gc
