@@ -1,0 +1,18 @@
+Comandos Linux
+
+* Ver los procesos java
+    -jps
+
+* Ver las flags de la JVM como heap inicial y maximo
+    - jcmd 34572 VM.flags
+    - jinfo -flags 34572
+
+* Aumentar el tamaño de la stack
+    -Stack pequeña
+        java -Xss256k StackCrash
+    -Stack grande
+        java -Xss4m StackCrash
+
+* Aumentar el tamaño del heap
+    - Heap pequeño -Xmx64m Tamaño maximo
+    - Heap -Xms Tamaño minimo
