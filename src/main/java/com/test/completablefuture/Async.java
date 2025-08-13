@@ -19,6 +19,7 @@ public class Async {
         System.out.println("Hilo principal sigue trabajando...");
 
         // Esperar a que termine (para ver el mensaje antes de que el programa acabe)
+        // Ya que el hilo que crea runAsync utiliza ForkJoinPool y este crea hilos daemon por defecto
         future.join();
     }
 }
